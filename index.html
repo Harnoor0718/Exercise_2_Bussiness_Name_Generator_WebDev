@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Brand Name Generator</title>
+</head>
+<body>
+    <script>
+        let rand1 = Math.random();
+        let first, second, third;
+
+        if (rand1 < 0.33) {
+            first = "Crazy";
+        } else if (rand1 < 0.66) {
+            first = "Amazing";
+        } else {
+            first = "Fire";
+        }
+
+        let rand2 = Math.random();
+
+        if (rand2 < 0.33) {
+            second = "Engine";
+        } else if (rand2 < 0.66) {
+            second = "Foods";
+        } else {
+            second = "Garments";
+        }
+
+        let rand3 = Math.random();
+
+        if (rand3 < 0.33) {
+            third = "Bros";
+        } else if (rand3 < 0.66) {
+            third = "Limited";
+        } else {
+            third = "Hub";
+        }
+
+        console.log(`${first} ${second} ${third}`);
+    </script>
+</body>
+</html>
